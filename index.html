@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlowBeauty Store</title>
+  <link rel="stylesheet" href="style.css/style.css">
+</head>
+<body>
+
+
+  <header class="header">
+    <div class="header__logo">Glow<span>Beauty</span></div>
+    <div class="header__actions">
+      <button class="btn btn--secondary">Login</button>
+      <button class="cart-btn">🛒 Cart <span class="cart-btn__badge">2</span></button>
+    </div>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">U  nleash Your Inner Glow</h1>
+      <p>Discover clean, radiant makeup and luxury skincare essentials.</p>
+      <a href="#products" class="btn btn--primary">Shop Beauty</a>
+    </div>
+  </section>
+
+  
+  <section class="filters">
+    <button class="pill active">All</button>
+    <button class="pill">Lipstick</button>
+    <button class="pill">Foundation</button>
+    <button class="pill">Skincare</button>
+  </section>
+
+  
+  <main class="products-container" id="products">
+    <div class="product-grid">
+
+      <article class="product-card" data-rating="4.9">
+        <div class="product-card__img-box">
+          <img src="lipstick RED.jpg" alt="Velvet Matte Lipstick" class="product-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=400&q=80';">
+        </div>
+        <div class="GlowMuse">
+          <span class="rating">★ 4.9</span>
+          <h3>Velvet Matte Lipstick</h3>
+          <p class="price">$24.00</p>
+          <button class="btn btn--primary btn--full">Add to Bag</button>
+        </div>
+      </article>
+
+      
+      <article class="product-card product-card--sale" data-rating="4.8">
+        <div class="product-card__img-box">
+          <img src="products/foundation.jpg" alt="Radiant Glow Foundation" class="product-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?auto=format&fit=crop&w=400&q=80';">
+        </div>
+        <div class="product-info">
+          <span class="rating">★ 4.8</span>
+          <h3>Radiant Glow Foundation</h3>
+          <p class="price"><span class="old">$42.00</span> $32.00</p>
+          <button class="btn btn--primary btn--full">Add to Bag</button>
+        </div>
+      </article>
+
+    
+      <article class="product-card product-card--low-stock" data-rating="4.5">
+        <div class="product-card__img-box">
+          <img src="products/serum.jpg" alt="Hydrating Serum" class="product-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=400&q=80';">
+        </div>
+        <div class="product-info">
+          <span class="rating">★ 4.5</span>
+          <h3>Hydrating Glow Serum</h3>
+          <p class="price">$38.00</p>
+          <button class="btn btn--primary btn--full btn--added">✓ Added</button>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+</body>
+</html>
